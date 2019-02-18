@@ -1,0 +1,9 @@
+version: '3'
+services:
+  python:
+    build: ./python
+    tty: true
+  mongo:
+    build: ./mongo
+    ports:
+     - "27017:27017"
